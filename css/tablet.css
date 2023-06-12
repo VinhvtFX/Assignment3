@@ -1,7 +1,8 @@
 @media (max-width: 1023px) {
   .container {
     display: grid;
-    width: 100%;
+    width: 96%;
+    margin: auto;
     grid-template-columns: 1fr;
     border: 10px solid blue;
   }
