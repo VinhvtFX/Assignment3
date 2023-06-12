@@ -1,0 +1,76 @@
+@media (min-width: 1024px) {
+  /* Căn chỉnh line out và tạo border */
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    width: 1200px;
+    margin: auto;
+    border: 10px solid blue;
+  }
+  .container > div {
+    border: 7px solid blue;
+  }
+  /* Phân chia khu vực cho time line và tạo khoảng cách giữa các item*/
+  .timeline {
+    grid-area: 3/4/1/3;
+  }
+
+  /* PHẦN GOALS, TEAM VÀ PRIMARY */
+  .item {
+    padding: 10px;
+  }
+  .item > h2 {
+    margin-bottom: 0px;
+    border-bottom: 1px solid #7f8a7f;
+    padding-bottom: 10px;
+    color: rgb(54, 97, 216);
+  }
+  .goal-icon,
+  .member-icon,
+  .primary-icon {
+    display: flex;
+    border-bottom: 1px solid rgb(88, 163, 120, 0.2);
+  }
+  .member-border,
+  .primary-boder {
+    border-bottom: none;
+  }
+  .icon {
+    margin: 21.28px 25px;
+    font-size: 20px;
+  }
+  .goal-p > h4,
+  .member-p > h4,
+  .timeline-p > h4 {
+    margin-bottom: 0px;
+  }
+  .goal-p > p,
+  .member-p > p,
+  .timeline-p > p {
+    margin-top: 5px;
+  }
+
+  /* PHẦN SCOPES */
+  .scopes {
+    display: flex;
+  }
+  .scopes-content {
+    margin: 0 20px;
+  }
+
+  /* PHẦN TIME LINE */
+  .time-line {
+    display: flex;
+  }
+  .timeline-p {
+    border-bottom: 1px dashed rgb(64, 100, 10);
+  }
+  .same-icon {
+    margin: 20px;
+    align-self: center;
+    background-color: rgb(158, 123, 192);
+    padding: 5px;
+    border: 2px solid rgb(133, 133, 125);
+    border-radius: 50%;
+  }
+}
